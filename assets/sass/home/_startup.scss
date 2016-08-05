@@ -1,0 +1,39 @@
+#start_up{
+	padding-top:100px;
+	padding-bottom:100px;
+	.row:first-child{
+		margin-bottom:50px;
+	}
+	.backgroundImg{
+		background-color: $mainColor;
+		max-width: 525px;
+		height:237px;
+		margin-bottom:80px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	img{
+		max-width: 475px;
+		height:308px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top:-30px;
+		display: block;
+		
+	}
+	.col-md-6:nth-child(2) {
+		padding-left:30px;
+		p{
+		   	font-family: $font-three;
+		   	font-weight:400;
+		   	color:$textColor2;
+		   	font-size: 14.5px;
+	    }
+		.button1{
+			clear:both;
+			@include button1($orangeColor,125px);
+		}
+	}
+}

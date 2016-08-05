@@ -1,0 +1,49 @@
+#team{
+	padding-top:100px;
+	background-color:$mainColor;
+	font-family:$font-one;
+	letter-spacing:1px;
+	padding-bottom:40px;
+	.row > div{
+		margin-bottom:27px;
+	}
+	.thumbnail{
+		padding:0;
+	}
+	
+	.caption{
+		padding:25px;
+		line-height: 20px;
+	}
+	img{
+		height:276px;
+		width:100%;
+	}
+	h3{
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 500;
+		margin:0;
+	}
+	h6{
+		font-size: 14px;
+		color:$orangeColor;
+		margin-top: 5px;
+		
+	}
+	
+	a{
+		color:$textColor;
+	}
+	.thumbnail:hover{
+		background-color:$blueColor;
+		color:black;
+	}
+	.thumbnail:hover h6{
+		background-color:$blueColor;
+		color:black;
+	}
+	.thumbnail:hover a{
+		color: white;
+	}
+}

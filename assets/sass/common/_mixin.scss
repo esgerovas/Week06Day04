@@ -1,0 +1,111 @@
+body{
+	line-height:24px;
+	font-size:14px;
+}
+.title{
+		font-size: 25px;
+		font-family:$font-two;
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 24px;	
+		margin-top: 0;
+		margin-bottom:42px;
+		
+	}
+
+.subtitle{
+		font-size: 13px;
+		font-family:$font-two;
+		text-transform: uppercase;
+		color:white;
+		background-color:$orangeColor;
+		padding:1px 3px;
+
+}
+
+@mixin blog(){
+	height:310px;
+	padding-top:125px;
+	font-family:$font-two;
+	text-align:center;
+	text-transform:uppercase;
+	color:white;
+	h1{
+		font-size:48px;
+		font-weight:800;
+		margin:0;
+		line-height: 30px;
+	}
+	h6{
+		font-size:14px;
+		font-weight:500;
+		line-height: 30px;
+		letter-spacing: 1px;
+	}
+
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin button($color,$wid){
+	width:$wid;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	color:white;
+	background-color:$color !important;
+	text-transform:uppercase;
+	display: inline-block;
+	border:0;
+	outline: none;
+	transition:all 0.5s ease;
+	letter-spacing:1px;
+	@include border-radius(19px);
+	&:focus {
+		outline: none;
+	}
+	&:hover{
+		box-shadow: 1px 1px 3px $blueColor;
+		background-color:darken($blueColor, 20%);
+		color:gray;
+
+	}
+}
+@mixin button1($color,$wid){
+	width:$wid;
+	line-height:44px;
+	text-align:center;
+	color:white;
+	background-color:$color;
+	text-transform:uppercase;
+	display: inline-block;
+	border:0;
+	outline: none;
+	transition:all 0.5s ease;
+	letter-spacing:1px;
+	font-family:$font-one;
+	font-weight:bold;
+	@include border-radius(3px);
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin slider(){
+	content:"";
+	width: 73px;
+	height:73px;
+	border:3px solid white;
+	display: block;
+	@include border-radius(50%);
+	bottom:92px;
+	position:relative;
+	left:-30px;
+	background-size:cover;
+
+}

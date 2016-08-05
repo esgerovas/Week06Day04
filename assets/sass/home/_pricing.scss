@@ -1,0 +1,72 @@
+#pricing{
+	padding-top:55px;
+	overflow:hidden;
+	padding-bottom:65px;
+	.row:first-child{
+		margin-bottom: 37px;
+	}
+	.col-md-3{
+		margin-bottom: 37px;
+	}
+	.info{
+		border:1px solid $borderColor;
+		height:420px;
+		position: relative;
+		transition:all 0.7s ease-out;
+		img{
+			position:absolute;
+			left:0;
+		}
+		h3{display:inline-block;
+			margin-bottom:0;
+			line-height: 45px;
+			font-family: $font-two;
+			font-weight: 700;
+			font-size:20px;
+			text-transform: uppercase;
+
+			span{
+				border-bottom:1px solid $orangeColor;
+				width: 38px;
+				height:1px;
+				display: block;
+				margin-bottom: -1px;
+			}
+
+		}
+		h5{
+			border-top:1px solid $borderColor;
+			border-bottom:1px solid $borderColor;
+			margin:0;
+			line-height: 58px;
+			font-size:18px;
+			font-family: $font-two;
+			font-weight: 400;
+			color:$textColor2;
+			span{
+				color: $orangeColor;
+			}
+		}
+		p{
+			color:$textColor2;
+			line-height: 36px;
+			font-size:15px;
+			font-family: $font-three;
+			padding:25px 0;
+		}
+		.button1{
+			position: absolute;
+			@include button1($orangeColor,141px);
+			bottom: -22px;
+			left:calc((100%/2) - 70px);
+		}
+	&:hover{
+		box-shadow:0 0 100px lighten($textColor, 25%);
+	}
+	&:hover .button1{
+		background-color:$blueColor;
+	}
+
+	}
+
+}

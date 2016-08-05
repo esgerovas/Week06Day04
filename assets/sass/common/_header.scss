@@ -1,0 +1,58 @@
+#header{
+	font-family:$font-one;
+	font-size:14px;
+	color:$textColor;
+    overflow:hidden;
+	.header1{
+		background-color: #1E2629;
+		span{
+			line-height: 38px;
+			display: inline-block;
+			font-size:15px;
+			float:right;
+			color:#8B9398;
+			text-transform: capitalize;
+			}
+		}
+	.header2{
+        .navbar{
+            margin-bottom: 0px;
+            padding:10px 0;
+        }
+        .navbar-toggle{
+			margin-top: 10px;
+			background-color:#eee;
+            .icon-bar{
+			background-color:#333 !important;
+		    }
+		}
+		
+		#navbar{
+			background-color:white !important;
+		}
+	   .navbar-right > li{
+            overflow: hidden;
+        } 
+        li{
+    	   a{
+			color: $textColor;
+            line-height: 60px;
+			padding:0 5px 0 35px;
+			&:hover{
+				background-color:transparent;
+				color:black;
+			}
+			&:focus{
+				background-color:transparent;
+			}
+			}
+			.active{
+				color:black;
+			}
+			i{
+				font-size:8.5px;
+			}
+			
+        }
+	}
+}

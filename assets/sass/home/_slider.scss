@@ -1,0 +1,104 @@
+#slider{
+	font-family:$font-two;
+	font-size:14px;
+	position:relative;
+	img{
+		max-height:750px;
+		width: 100%;
+	}
+	.carousel-control{
+		width:8%;
+		color:white;
+		cursor: pointer;
+		span{
+			font-size:50px;
+		}
+	}
+	.content{
+		overflow:hidden;
+		position:absolute;
+		top:0;
+		left:8%;
+		right:8%;
+		height:750px;
+		.info{
+			top:33%;
+			position:relative;
+			h1{
+				font-size:48px;
+				font-weight: 900;
+				font-size: 60px;
+				color: white; 
+				margin:0;
+			}
+			p{
+				color:white;
+				line-height: 55px;
+				font-size:25px;
+				margin:0;
+			}
+			.button1{
+				@include button1($blueColor,141px);
+				margin-top:30px;
+			}
+		}
+		form{
+			background-color: #404143;
+			width: 100%;
+			min-height: 90px;
+			border-radius: 3px;
+			padding:  23px 10px;
+			position:absolute;
+			bottom:30px;
+
+			h2{
+				color:white;
+				position:relative;
+				font-size: 22px;
+				line-height: 44px;
+				display: inline-block;
+				font-weight: bold;
+				margin:0;
+				padding:0;
+				margin-right: 10px;
+				margin-left:0;
+				&:before{
+					content:"";
+					height: 36px;
+					width: 0;
+					border: 2px solid $orangeColor;
+					position: absolute;
+					left: -40px;
+					bottom:2px;
+				}
+				&:after{
+					content:"signup";
+					background-color: $orangeColor;
+					font-size: 12px;
+					padding: 3px;
+					position:absolute;
+					left: 0;
+					top:-7px;
+					display: inline;
+					line-height: 12px;
+				}	
+			}
+			input{
+				width: 330px;
+				height: 44px;
+				border:0;
+				border-radius: 3px;
+				padding-left: 20px;
+				margin-right: 5px;
+			}
+			.button1{
+				@include button1($orangeColor,190px);
+
+			}
+		}
+	}
+}
+
+
+ 		
+			

@@ -1,0 +1,62 @@
+#client{
+	background-color:$orangeColor;
+	padding-top:90px;
+	padding-bottom:70px;
+	.subtitle{
+		background-color:black;
+	}
+	.title{
+		margin-bottom: 15px;
+	}
+	.quote1 i{
+		color:white;
+		border:2px solid white;
+		padding:11px 13px;
+		border-radius:50%;
+		font-size:18px;
+	}
+	.slider1{
+		p{  font-family:$font-four;
+			font-style: italic;
+			font-size: 15px;
+			margin:25px 0;
+			line-height: 28px;
+
+	}
+		.quote2{
+			position: relative;
+			top:-5px;
+			text-align:left;
+			float:left;
+			
+		}
+		.quote3{
+			float:right;
+			position: relative;
+			top:-50px;
+		}
+		span:last-child{
+			font-weight:bold;
+		}
+	}
+	.img{
+		margin:20px auto;
+		width:200px;
+		img{
+			margin:0 2px;
+		}
+		img:nth-child(4){
+			margin-top:-8px;
+		} 
+		img:nth-child(5){
+			margin-top:-8px;
+		} 
+
+	}
+
+
+
+	
+
+	
+}

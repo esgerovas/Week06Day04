@@ -1,0 +1,45 @@
+#feature{
+	padding-top:100px;
+	position:relative;
+	background-color: $mainColor;
+	font-family: $font-three;
+	.col-md-4, .col-xs-12{
+		margin-bottom:47px;
+	}
+	.row:first-child{
+		margin-bottom: 55px;
+	}
+	p{
+	   	font-family: $font-three;
+	   	font-weight:400;
+	   	color:$textColor2;
+	   	font-size: 14.5px;
+    }
+	.icon {
+		width:67px;
+		height: 67px;
+		text-align:center;
+		line-height: 65px;
+		float:left;
+		border:1px solid gray;
+	}
+	.icon:hover, .active {
+		background-color:$blueColor;
+		border:0;
+	}
+	.info{
+		margin-top:-2px;
+		float:left;
+		padding-left:30px;
+		position: relative;
+		width: calc(100% - 67px);
+		h3{
+			font-size:20px;
+			margin-top:0;
+			font-size: 500;
+			text-transform: capitalize;
+		}
+	}
+
+	
+}
